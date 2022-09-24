@@ -15,26 +15,31 @@ clear.addEventListener("click", () => {
     a.style.backgroundColor = "white";
     //  a.querySelector(".dot").style.display = "none"
   }
-});
-function changeNum() {
-  if (alertt.innerHTML > 0) {
+})
+function counter() {
+   if (alertt.innerHTML > 0) {
     alertt.innerHTML = alertt.innerHTML - 1;
   } else {
     alertt.innerHTML = 0;
-  }
+  } 
+  /*const c = boxess.length - document.querySelectorAll(".read").length
+  console.log(c)
+  //console.log(boxess.length)
+  //console.log(document.querySelectorAll(".read").length)
+  alertt.textContent = c */
 }
 markDiv.addEventListener("click", () => {
   markDiv.style.backgroundColor = "white";
   mark.style.display = "none";
-  changeNum();
+  counter();
 });
 angelaDiv.addEventListener("click", () => {
   angelaDiv.style.backgroundColor = "white";
   angela.style.display = "none";
-  changeNum();
+  counter();
 });
 jacobDiv.addEventListener("click", () => {
   jacobDiv.style.backgroundColor = "white";
   jacob.style.display = "none";
-  changeNum();
+  counter();
 });

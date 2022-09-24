@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@500;800&display=swap');
 * {
     margin: 0;
     padding: 0;
@@ -15,6 +16,8 @@
 body {
     padding: 20%;
     background: var(--Light-grayish-blue-1);
+    font-family: 'Plus Jakarta Sans', sans-serif;
+
 }
 #body {
     background-color: var(--White);
@@ -63,20 +66,24 @@ img {
 h4 {
     margin-top: 10px;
     color: var(--Dark-grayish-blue);
+    font-weight: 500;
 }
 fieldset {
     margin-top: 2%;
     margin-left: 15%;
     padding: 3%;
+    font-weight: 500;
     font-size: 23px;
 }
 .bold {
 color: black;
 opacity: 100%;
+font-weight: 800;
 }
 .light {
     color: black;
-    opacity: 70%
+    opacity: 70%;
+    font-weight: 800;
 }
 .bold:hover,
 .light:hover {
@@ -97,8 +104,9 @@ fieldset:hover {
     display: none;
 }
  p {
-    margin: -5px 0px 0px 50px;
+    margin: 0px 0px 0px 50px;
     color: var(--Dark-grayish-blue);
+    font-weight: 500;
 }
 @media only screen and (max-width: 600px) {
     body {
