@@ -1,0 +1,160 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+:root {
+    --White: hsl(0, 0%, 100%);
+    --Very-light-grayish-blue: hsl(210, 60%, 98%);
+    --Light-grayish-blue-1: hsl(211, 68%, 94%);
+    --Light-grayish-blue-2: hsl(205, 33%, 90%);
+    --Grayish-blue: hsl(219, 14%, 63%);
+    --Dark-grayish-blue: hsl(219, 12%, 42%);
+    --Very-dark-blue: hsl(224, 21%, 14%);
+}
+body {
+    padding: 20%;
+    background: var(--Light-grayish-blue-1);
+}
+#body {
+    background-color: var(--White);
+    padding: 3%;
+   border-radius: 5px;
+    box-shadow:  1px 1px 10px #d9d9d9,
+                 -1px -1px 10px #ffffff;
+}
+.header {
+    display: flex;
+    justify-content: space-between;
+}
+.num {
+    color: var(--White);
+    background: blue;
+    padding: 2px 7px;
+    border-radius: 5px;
+    opacity: 80%;
+    font-size: 15px;
+    font-weight: 800;
+}
+.toggle:hover {
+    cursor: pointer;
+}
+.boxes {
+    margin-top: 2%;
+    border-radius: 5px;
+     padding: 1%;
+                 background-color: var(--Light-grayish-blue-2);
+}
+.diff {
+    margin-top: 2%;
+}
+.box {
+    display: flex;
+    gap: 8px;
+    
+}
+img {
+    width: 5%;
+}
+.chess {
+    margin-left: 45%;
+}
+h4 {
+    margin-top: 10px;
+    color: var(--Dark-grayish-blue);
+}
+fieldset {
+    margin-top: 2%;
+    margin-left: 15%;
+    padding: 3%;
+    font-size: 23px;
+}
+.bold {
+color: black;
+opacity: 100%;
+}
+.light {
+    color: black;
+    opacity: 70%
+}
+.bold:hover,
+.light:hover {
+    cursor: pointer;
+}
+fieldset:hover {
+    background-color: var(--Light-grayish-blue-2);
+}
+.dot {
+    background: red;
+    border-radius: 50%;
+    height: 10px;
+    margin-left: 5px;
+    width: 10px;
+    display: inline-block;
+}
+.dot.act {
+    display: none;
+}
+ p {
+    margin: -5px 0px 0px 50px;
+    color: var(--Dark-grayish-blue);
+}
+@media only screen and (max-width: 600px) {
+    body {
+        padding: 5%;
+    }
+    img {
+        width: 7%;
+        height: 30px;
+        margin-top: 15px;
+    }
+    h4 {
+        font-size: 13px;
+    }
+     p {
+        margin: -10px 0px 0px 40px;
+    }
+    .bold {
+        font-size: 15px;
+    }
+    .light {
+        font-size: 13px;
+    }
+    .chess {
+        width: 10%;
+        height: 35px;
+        margin: 15px 0px 0px 25%;
+    }
+    .risky {
+        font-size: 20px;
+    }
+}
+@media only screen and (max-width: 360px) {
+    
+}
+@media only screen and (max-width: 375px) {
+    body {
+        padding: 3px;
+    }
+    .header {
+        font-size: 13px;
+    }
+    p {
+        margin: 5px 0px 0px 40px;
+    }
+    h4 {
+        font-size: 20px;
+    }
+    .bold {
+        font-size: 20px;
+    }
+    .light {
+        font-size: 20px;
+    }
+    .chess {
+        margin: 15px 0px 0px 5%;
+    }
+    .risky {
+        font-size: 20px;
+    }
+}
