@@ -26,6 +26,7 @@ body {
 .header {
     display: flex;
     justify-content: space-between;
+    text-align: center;
 }
 .num {
     color: var(--White);
@@ -130,7 +131,7 @@ fieldset:hover {
     }
 }
 @media only screen and (max-width: 360px) {
-    
+
 }
 @media only screen and (max-width: 375px) {
     body {
@@ -156,5 +157,16 @@ fieldset:hover {
     }
     .risky {
         font-size: 20px;
+    }
+}
+@media only screen and (max-width: 360px) {
+    .header {
+        font-size: 10px;
+    }
+    .note { margin-top: 0px;
+    }
+    .toggle{
+        margin-top: 3px;
+        font-size: 15px;
     }
 }
